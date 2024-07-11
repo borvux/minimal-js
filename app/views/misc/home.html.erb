@@ -23,11 +23,23 @@
   });
 </script>
 
-
 <hr>
 
 <p>testing out oop javascript - stimulus</p>
 
 <div data-controller="example">
   <p data-example-target="text">Hello, Stimulus!</p>
+</div>
+
+<hr>
+
+<div data-controller="filter">
+  <input type="text" data-action="input->filter#applyFilters" placeholder="Search items">
+  <!-- add a loading spinner that appears while filtering the list -->
+  <div data-filter-target="spinner" class="spinner" style="display: none;">Loading...</div>
+  <ul data-filter-target="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
 </div>
