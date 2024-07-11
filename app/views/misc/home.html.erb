@@ -12,6 +12,22 @@
 <script>
   // Write your JS here.
   // Open the JS console and refresh the page to see the output.
-
-  
+  console.log("howdy");
 </script>
+
+<div id="bye">Click me</div>
+
+<script>
+  $("body").on("click", "#bye", function() {
+  $(".west").fadeToggle();
+  });
+</script>
+
+
+<hr>
+
+<p>testing out oop javascript - stimulus</p>
+
+<div data-controller="example">
+  <p data-example-target="text">Hello, Stimulus!</p>
+</div>
